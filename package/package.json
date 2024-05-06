@@ -1,0 +1,12 @@
+{
+  "name": "kai-monorepo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "pnpm -r run dev"
+  }
+}
