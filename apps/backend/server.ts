@@ -3,7 +3,10 @@ import http from 'http';
 import express from 'express';
 import cors from './lib/middleware/cors';
 
-const PORT = 3000;
+const PORT = process.env.PORT ?? null;
+if (PORT === null) {
+  throw new Error('PORT is not defined.');
+}
 
 const app = express();
 
